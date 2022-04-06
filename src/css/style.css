@@ -79,6 +79,20 @@ footer p{
     font-size: 5px;
     box-shadow: 0px 4px 4px -2px black;
 }
+.saltar{
+    animation: 2s saltar infinite;
+}
+@keyframes saltar{
+    20%, 50%, 80%{
+        transform:translateY(0px);
+    }
+    30%{
+        transform:translateY(-45px);
+    }
+    60%{
+        transform:translateY(-25px);
+    }
+}
 .box-info{
     display: flex;
     align-content: flex-start;
@@ -288,6 +302,12 @@ footer p{
     flex-direction: column ;
     align-items: center;
     margin: 20px;
+    animation: scale 1s 1s;
+}
+@keyframes scale{
+    0%{
+        transform: scale(0);
+    }
 }
 .form-group{
     display: flex;
@@ -391,6 +411,20 @@ footer p{
 .botones-menu img{
     width: 250px;
     margin-left: 50px;
+}
+.option1{
+animation: menu 1.5s ease-in 1s 1;
+}
+.option2{
+    animation: menu 1.5s ease-in 3s 1;
+}
+.option3{
+    animation: menu 1.5s ease-in 5s 1;
+}
+@keyframes menu{
+    20%{
+        transform: translateY(-10px);
+    }
 }
 .btn-icono{
     display: flex;
@@ -508,6 +542,12 @@ footer p{
     margin:auto;
     padding: 0;
     border: 0;
+    animation: mover 2s;
+}
+@keyframes mover{
+    0%{
+        transform: translateX(-200vh);
+    }
 }
 .table caption{
     font-size: 22px;
@@ -552,7 +592,6 @@ footer p{
     font-weight: bold;
     float: left;
 }
-
 .hpacientes{
     display: flex;
     justify-content: space-between;
@@ -776,6 +815,12 @@ margin-top: 1px;
     flex-direction: column;
     justify-content: center;
     margin-left:15px;
+    animation: form 2s;
+}
+@keyframes form{
+    0%{
+        transform: translateY(-100vh);
+    }
 }
 .date{
     margin: 15px 15px 10px 10px;
