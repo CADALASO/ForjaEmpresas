@@ -54,7 +54,6 @@ footer p{
     flex-direction: column; 
     align-items: center;
 }
-
 .encabezado button{
     font-size: 10px;
     margin-bottom: 20px;
@@ -64,7 +63,6 @@ footer p{
     justify-content: center;
     padding: 10px;
 }
-
 .icono-contacto{
     width:10px;
     height: 10px;
@@ -104,11 +102,12 @@ footer p{
 }
 .linea-logo{
     display: flex;
+    flex-wrap: wrap;
 }
 .logo{
     width: 150px; 
     height: auto;
-    margin-left: 100px;
+    margin-left: 85px;
     margin-bottom: -20px;
 }
 .linea{
@@ -172,7 +171,7 @@ footer p{
 .covid:before{
     content: "";
     width: 100%;
-    height:70%;
+    height:63.5%;
     background-color: #ffffffe3;
     position: absolute;
 }
@@ -266,8 +265,8 @@ footer p{
 }
 .btn{
     position: absolute;
-    top: 50px;
-    left: 220px;
+    top: 100px;
+    left: 210px;
 }
 .boton-inicio{
     color: white;
@@ -383,6 +382,7 @@ footer p{
 #cajita-principal{
     display: flex;
     flex-direction: column;
+    width: 100%;
 }
 .botones-menu{
     width: 100%;
@@ -435,7 +435,6 @@ animation: menu 1.5s ease-in 1s 1;
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: 100vh;
 }
 .footer{
     width: 0px;
@@ -443,7 +442,7 @@ animation: menu 1.5s ease-in 1s 1;
 }
 .footer img{
     position: absolute;
-    right: -12px;
+    right: -0px;
     bottom: -24rem;
     max-width: 150%;
 }
@@ -482,6 +481,7 @@ animation: menu 1.5s ease-in 1s 1;
     align-items: center;
     align-content: center;
     margin-top: 20px;
+    padding: 10px;
 }
 .centro h1{
     font-size: 30px;
@@ -491,7 +491,6 @@ animation: menu 1.5s ease-in 1s 1;
     flex-direction: row;
     align-items: center;
     margin-top: 70px;
-    margin-left: 20px;
 }
 .busqueda input{
     border: 0;
@@ -499,15 +498,15 @@ animation: menu 1.5s ease-in 1s 1;
     font-family: 'Poppins', sans-serif;
     width: 270px;
     height: 30px;
-    margin-right: 0.5rem;
     font-size: 0.9rem;
+    margin-right: 2px;
 }
 .busqueda button{
     background-color:var(--blue-color);
     border: 3px solid var(--aquablue-color);
     border-radius: 8px;
-    margin-right: 5px;
     cursor: pointer;
+    margin-right: 2px;
 }
 .busqueda i{
     width:20px;
@@ -517,14 +516,12 @@ animation: menu 1.5s ease-in 1s 1;
     align-items: center;
     color: #ffffff;
     font-size: 12px;
-    margin-right: 5px;
 }
 .guerreros{
-    position:static;
     opacity: 50%;
-    margin-left: 120px;
-    margin-top: 100px;
     float: right;
+    left: 25%;
+    margin-top: 20%;
     transform: rotate(10deg);
     width: 250px;
     height: auto;
