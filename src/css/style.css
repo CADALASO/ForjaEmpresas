@@ -171,7 +171,7 @@ footer p{
 .covid:before{
     content: "";
     width: 100%;
-    height:63.5%;
+    height:69.8%;
     background-color: #ffffffe3;
     position: absolute;
 }
@@ -265,8 +265,8 @@ footer p{
 }
 .btn{
     position: absolute;
-    top: 100px;
-    left: 210px;
+    top: 50px;
+    left: 220px;
 }
 .boton-inicio{
     color: white;
@@ -903,10 +903,10 @@ margin-top: 1px;
     .lista {
         width: 400px;
     }
-    table{
+    .tabla{
         font-size: 12px;
     }
-    table td {
+    .tabla td {
         height: 2.2rem;
     }
     footer{
@@ -944,14 +944,9 @@ margin-top: 1px;
         margin-top: 50px;
     }
     .guerreros{
-        position:static;
-        opacity: 50%;
-        margin-left: 250px;
-        margin-top: 100px;
-        float: right;
-        transform: rotate(10deg);
         width: 200px;
-        height: auto;
+        left: 300px;
+        margin-top: 60px;
     }
     .footer img{
         position: absolute;
@@ -983,6 +978,9 @@ margin-top: 1px;
     }
     .form-group2{
         margin-left:45px ;
+    }
+    .siyno{
+        margin: auto;
     }
 }
 
@@ -1066,10 +1064,10 @@ margin-top: 1px;
     .lista {
         width: 500px;
     }
-    table{
+    .tabla{
         font-size: 16px;
     }
-    table td {
+    .tabla td {
         height: 3.2rem;
     }
     footer{
@@ -1087,7 +1085,7 @@ margin-top: 1px;
         height: 440px;
     }
     .btn{
-        top: 30px;
+        top: 120px;
         left: 590px;
     }
 
@@ -1097,19 +1095,14 @@ margin-top: 1px;
         margin-right: 3.5rem;
     }
     .guerreros{
-        position:static;
-        opacity: 50%;
-        margin-left: 450px;
-        margin-top: 50px;
-        float: right;
-        transform: rotate(10deg);
-        width: 250px;
-        height: auto;
+        left: 450px;
+        margin-top: 150px;
+        width: 300px;
     }
     .footer img{
         position: absolute;
-        right: 44px;
-        max-width: 730px;
+        right: 4px;
+        max-width: 770px;
     }
     
     /*pacientes*/
@@ -1158,7 +1151,7 @@ margin-top: 1px;
     /*usuarionuevo*/
     .form-group2{
         flex-direction: row;
-        margin-left:10px;
+        margin-right: 40px;
     }
     .colorgris{
         height: 1000px;
@@ -1236,7 +1229,7 @@ margin-top: 1px;
         height: 500px;
     }
     .btn{
-        top: 3px;
+        top: 150px;
         left: 710px;
     }
 
@@ -1246,14 +1239,14 @@ margin-top: 1px;
         margin-right: 4.5rem;
     }
     .guerreros{
-        margin-left: 600px;
-        margin-top: 40px;
-        width: 250px;
+        left: 520px;
+        margin-top: 170px;
+        width: 400px;
     }
     .footer img{
         position: absolute;
-        right: 55px;
-        max-width: 896px;
+        right: 5px;
+        max-width: 945px;
     }
     
     /*pacientes*/
