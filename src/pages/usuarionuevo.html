@@ -17,8 +17,10 @@
             <img src="../utils/img/0. logoforja.png" alt="logo ForjaEmpresas">
         </div>
         <div class="btn-0001">
-            <a href="dashboard.html"><button type="submit" class="btn-001"><i class="fa-solid fa-house-chimney-user"></i></button></a>
-            <a href="login.html"><button type="submit" class="btn-001"><i class="fa-solid fa-power-off"></i></button></a>
+            <a href="dashboard.html"><button type="submit" class="btn-001"><i
+                        class="fa-solid fa-house-chimney-user"></i></button></a>
+            <a href="login.html"><button type="submit" class="btn-001"><i
+                        class="fa-solid fa-power-off"></i></button></a>
         </div>
     </header>
     <div class="border">
@@ -29,104 +31,104 @@
     </div>
     <main id="formulario">
         <div class="form">
-            <div class="colorgris">
-                <div class="form-group2">
-                    <input name="date" id="date" type="date" class="date">
-                    <input name="nregistro" id="nregistro" type="text" placeholder="N Registro" required class="date">
+            <form action="../pages/pacientes.html" id="form">
+                <div class="colorgris">
+                    <div class="form-group2">
+                        <input name="date" id="date" type="date" class="date" >
+                        <input name="nregistro" id="nregistro" type="number" placeholder="N Registro" class="date">
+                    </div>
+                    <div class="subtitulo">
+                        <img src="../utils/img/16. man-user.svg" alt="user">
+                        <h3 class="subinfo">DATOS DEL PACIENTE</h3>
+                    </div>
+                    <div class="form-group2">
+                        <input name="nombre" id="nombre" type="text" placeholder="Escribe el nombre" class="tamaño">
+                        <input name="apellidos" id="apellidos" type="text" placeholder="Apellidos"class="tamaño">
+                    </div>
+                    <div class="form-group2">
+                        <input name="ndocumento" id="ndocumento" type="number" placeholder="Numero de indentificación" class="tamaño">
+                        <select name="tdocumento" id="tdocumento" class="tamaño" >
+                            <option valor="0" selected>Tipo de documeto</option>
+                            <option valor="1">Registro Civil</option>
+                            <option valor="2">Tarjeta de Identidad</option>
+                            <option valor="3">Cedula de Ciudadania</option>
+                            <option valor="4">Pasaporte</option>
+                        </select>
+                    </div>
+                    <div class="form-group2">
+                        <input name="fnacimiento" id="fnacimiento" type="date" class="tamaño" >
+                        <input name="Edad" id="Edad" type="number" placeholder="Edad" class="tamaño" >
+                    </div>
+                    <div class="subtitulo">
+                        <img src="../utils/img/17. geo.svg" alt="contacto">
+                        <h3 class="subinfo2">INFORMACIÓN DE CONTACTO</h3>
+                    </div>
+                    <div class="form-group2">
+                        <select name="departamento" id="departamento" class="tamaño" >
+                            <option valor="0" selected>Departamento de residencia</option>
+                            <option valor="1">Opción 1</option>
+                            <option valor="2">Opción 2</option>
+                            <option valor="3">Opción 3</option>
+                            <option valor="4">Opción 4</option>
+                        </select>
+                        <select name="departamento" id="departamento" class="tamaño">
+                            <option valor="0" selected>Municipio de residencia</option>
+                            <option valor="1">Opción 1</option>
+                            <option valor="2">Opción 2</option>
+                            <option valor="3">Opción 3</option>
+                            <option valor="4">Opción 4</option>
+                        </select>
+                    </div>
+                    <div class="form-group2">
+                        <input name="direccion" id="direccion" type="text" placeholder="Dirección" class="tamaño">
+                        <input name="email" id="email" type="email" placeholder="Correo" class="tamaño" >
+                    </div>
+                    <div class="form-group2">
+                        <input name="telefono" id="telefono" type="number" placeholder="Teléfono fijo" class="tamaño">
+                        <input name="celular" id="celular" type="number" placeholder="Celular"  class="tamaño">
+                    </div>
+                    <div class="subtitulo">
+                        <img src="../utils/img/18. latido-del-corazon.svg" alt="corazon">
+                        <h3 class="subinfo3">ESTADO DE SALUD</h3>
+                    </div>
+                    <div class="form-group2">
+                        <select name="salud" id="salud" class="grupo3">
+                            <option valor="0" selected>Preexistencias</option>
+                            <option valor="1">Opción 1</option>
+                            <option valor="2">Opción 2</option>
+                            <option valor="3">Opción 3</option>
+                            <option valor="4">N/A</option>
+                        </select>
+                        <select name="discapacidad" id="discapacidad"  class="grupo3">
+                            <option valor="0" selected>Discapacidad</option>
+                            <option valor="1">Opción 1</option>
+                            <option valor="2">Opción 2</option>
+                            <option valor="3">Opción 3</option>
+                            <option valor="4">N/A</option>
+                        </select>
+                        <input name="alergias" id="alergias" type="text" placeholder="alergias" class="grupo3 tamaño">
+                    </div>
+                    <label for="pcovid">¿El paciente se ha realizado la prueba del Covid con anterioridad y esta a sido
+                        positiva?</label>
+                    <div class="distancia">
+                        <label for="si" class="siyno">SI</label>
+                        <input name="pcovid" id="pcovid" type="radio">
+                        <label for="no" class="siyno">NO</label>
+                        <input name="pcovid" id="pcovid" type="radio">
+                    </div>
+                    <label for="pcovid">¿El paciente tenido contacto estrecho o cercano con una persona confirmada o
+                        sospechosa
+                        COVID-19 en los últimos 14 días?</label>
+                    <div class="distancia">
+                        <label for="si" class="siyno">SI</label>
+                        <input name="pcovid" id="pcovid" type="radio">
+                        <label for="no" class="siyno">NO</label>
+                        <input name="pcovid" id="pcovid" type="radio">
+                    </div>
                 </div>
-                <div class="subtitulo">
-                    <img src="../utils/img/16. man-user.svg" alt="user">
-                    <h3 class="subinfo">DATOS DEL PACIENTE</h3>
-                </div>
-                <div class="form-group2">
-                    <input name="nombre" id="nombre" type="text" placeholder="Escribe el nombre" required
-                        class="tamaño">
-                    <input name="apellidos" id="apellidos" type="text" placeholder="Apellidos" required class="tamaño">
-                </div>
-                <div class="form-group2">
-                    <input name="ndocumento" id="ndocumento" type="text" placeholder="Numero de indentificación"
-                        required class="tamaño">
-                    <select name="tdocumento" id="tdocumento" class="tamaño">
-                        <option valor="0" selected>Tipo de documeto</option>
-                        <option valor="1">Registro Civil</option>
-                        <option valor="2">Tarjeta de Identidad</option>
-                        <option valor="3">Cedula de Ciudadania</option>
-                        <option valor="4">Pasaporte</option>
-                    </select>
-                </div>
-                <div class="form-group2">
-                    <input name="fnacimiento" id="fnacimiento" type="date" class="tamaño">
-                    <input name="Edad" id="Edad" type="number" placeholder="Edad" class="tamaño">
-                </div>
-                <div class="subtitulo">
-                    <img src="../utils/img/17. geo.svg" alt="contacto">
-                    <h3 class="subinfo2">INFORMACIÓN DE CONTACTO</h3>
-                </div>
-                <div class="form-group2">
-                    <select name="departamento" id="departamento" class="tamaño">
-                        <option valor="0" selected>Departamento de residencia</option>
-                        <option valor="1">Opción 1</option>
-                        <option valor="2">Opción 2</option>
-                        <option valor="3">Opción 3</option>
-                        <option valor="4">Opción 4</option>
-                    </select>
-                    <select name="departamento" id="departamento" class="tamaño">
-                        <option valor="0" selected>Municipio de residencia</option>
-                        <option valor="1">Opción 1</option>
-                        <option valor="2">Opción 2</option>
-                        <option valor="3">Opción 3</option>
-                        <option valor="4">Opción 4</option>
-                    </select>
-                </div>
-                <div class="form-group2">
-                    <input name="direccion" id="direccion" type="text" placeholder="Dirección" required class="tamaño">
-                    <input name="email" id="email" type="email" placeholder="Correo" class="tamaño">
-                </div>
-                <div class="form-group2">
-                    <input name="telefono" id="telefono" type="text" placeholder="Teléfono fijo" class="tamaño">
-                    <input name="celular" id="celular" type="text" placeholder="Celular" required class="tamaño">
-                </div>
-                <div class="subtitulo">
-                    <img src="../utils/img/18. latido-del-corazon.svg" alt="corazon">
-                    <h3 class="subinfo3">ESTADO DE SALUD</h3>
-                </div>
-                <div class="form-group2">
-                    <select name="salud" id="salud" required class="grupo3">
-                        <option valor="0" selected>Preexistencias</option>
-                        <option valor="1">Opción 1</option>
-                        <option valor="2">Opción 2</option>
-                        <option valor="3">Opción 3</option>
-                        <option valor="4">N/A</option>
-                    </select>
-                    <select name="discapacidad" id="discapacidad" required class="grupo3">
-                        <option valor="0" selected>Discapacidad</option>
-                        <option valor="1">Opción 1</option>
-                        <option valor="2">Opción 2</option>
-                        <option valor="3">Opción 3</option>
-                        <option valor="4">N/A</option>
-                    </select>
-                    <input name="alergias" id="alergias" type="text" placeholder="alergias" class="grupo3 tamaño">
-                </div>
-                <label for="pcovid">¿El paciente se ha realizado la prueba del Covid con anterioridad y esta a sido
-                    positiva?</label>
-                <div class="distancia">
-                    <label for="si" class="siyno">SI</label>
-                    <input name="pcovid" id="pcovid" type="radio">
-                    <label for="no" class="siyno">NO</label>
-                    <input name="pcovid" id="pcovid" type="radio">
-                </div>
-                <label for="pcovid">¿El paciente tenido contacto estrecho o cercano con una persona confirmada o
-                    sospechosa
-                    COVID-19 en los últimos 14 días?</label>
-                <div class="distancia">
-                    <label for="si" class="siyno">SI</label>
-                    <input name="pcovid" id="pcovid" type="radio">
-                    <label for="no" class="siyno">NO</label>
-                    <input name="pcovid" id="pcovid" type="radio">
-                </div>
-            </div>
+            </form>
             <div class="agregar guardar">
-                <button>Guardar</button>
+                <button type="submit" form="form">Guardar</button>
             </div>
         </div>
     </main>

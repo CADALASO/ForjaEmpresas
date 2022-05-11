@@ -1,70 +1,89 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
-*{
+
+* {
     box-sizing: border-box;
 }
-:root{
-	--red-color: #A40101;
-	--aquablue-color: #2CA3AB;;
-	--gray-color:#C4C4C4;
-	--orange-color:#F3610E;
-    --blue-color:#1D1B45;
+
+:root {
+    --red-color: #A40101;
+    --aquablue-color: #2CA3AB;
+    --gray-color: #C4C4C4;
+    --orange-color: #F3610E;
+    --blue-color: #1D1B45;
 }
-h1{
+
+h1 {
     font-family: 'Poppins', sans-serif;
     color: var(--orange-color);
-    }
-h3{
+}
+
+h3 {
     font-family: 'Poppins', sans-serif;
     color: var(--blue-color);
 }
-h2,p,li,a{
+
+h2,
+p,
+li,
+a {
     font-family: 'Poppins', sans-serif;
 }
-p{
+
+p {
     text-align: justify;
 }
-table{
+
+table {
     font-family: 'Poppins', sans-serif;
     color: #000;
 }
-header{
+
+header {
     width: 100%;
     padding-top: 10px;
 }
-body{
+
+body {
     margin: 0;
     width: 100%;
     font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+
 }
-footer{
+
+footer {
     font-family: 'Poppins', sans-serif;
     color: #ffffff;
     text-align: center;
     background-color: #000000;
     width: 100%;
-    height: 30px;
 }
-footer p{
+
+footer p {
     text-align: center;
     padding-top: 10px;
     font-size: 10px;
 }
-.encabezado{
+
+.encabezado {
     display: flex;
-    flex-direction: column; 
+    flex-direction: column;
     align-items: center;
 }
-.encabezado button{
+
+.encabezado button {
     font-size: 10px;
     margin-bottom: 20px;
 }
-.contacto{
+
+.contacto {
     display: flex;
     justify-content: center;
     padding: 10px;
 }
-.icono-contacto{
-    width:10px;
+
+.icono-contacto {
+    width: 10px;
     height: 10px;
     display: flex;
     justify-content: center;
@@ -77,49 +96,63 @@ footer p{
     font-size: 5px;
     box-shadow: 0px 4px 4px -2px black;
 }
-.saltar{
+
+.saltar {
     animation: 2s saltar infinite;
 }
-@keyframes saltar{
-    20%, 50%, 80%{
-        transform:translateY(0px);
+
+@keyframes saltar {
+
+    20%,
+    50%,
+    80% {
+        transform: translateY(0px);
     }
-    30%{
-        transform:translateY(-45px);
+
+    30% {
+        transform: translateY(-45px);
     }
-    60%{
-        transform:translateY(-25px);
+
+    60% {
+        transform: translateY(-25px);
     }
 }
-.box-info{
+
+.box-info {
     display: flex;
     align-content: flex-start;
     padding-left: 1rem;
 }
-.box-info p{
+
+.box-info p {
     margin-top: 0rem;
     font-size: 10px;
 }
-.linea-logo{
+
+.linea-logo {
     display: flex;
     flex-wrap: wrap;
 }
-.logo{
-    width: 150px; 
+
+.logo {
+    width: 150px;
     height: auto;
     margin-left: 85px;
     margin-bottom: -20px;
 }
-.linea{
+
+.linea {
     width: 80%;
     margin-left: 70px;
     margin-top: 20px;
 }
-.icono-logo{
+
+.icono-logo {
     font-size: 25px;
     color: var(--orange-color);
 }
-.btn-azul{
+
+.btn-azul {
     font-family: 'Poppins', sans-serif;
     padding: 0.5rem;
     border: none;
@@ -127,66 +160,82 @@ footer p{
     background-color: var(--blue-color);
     border-radius: 10px;
     color: #ffffff;
-    font-weight:bold;
+    font-weight: bold;
 }
-.medico1{
+
+.medico1 {
     display: flex;
     flex-direction: column;
     background: url(../utils/img/2.\ medico.png) no-repeat right top scroll;
     width: 100%;
-    height:150px;
+    height: 150px;
     background-size: cover;
 }
-.text{
+
+.text {
     display: flex;
     flex-direction: column;
-    align-items:center;
+    align-items: center;
     padding: 40px 140px 40px 0;
 }
-.text h2{
+
+.text h2 {
     font-size: 12px;
     margin: 5px;
-    
+
 }
-.text h1{
+
+.text h1 {
     margin: 5px;
     font-size: 12px;
 }
-.text button{
+
+.text button {
     font-size: 10px;
 }
-.franja{
+
+.franja {
     display: flex;
     justify-content: flex-end;
     width: 100%;
     background-size: cover;
 }
-.covid{
+
+.covid {
     width: 100%;
     display: flex;
     flex-direction: column;
-    background:url(../utils/img/4.\ covid.jpeg) repeat-y;
-    font-size: 10px;   
+    background: url(../utils/img/4.\ covid.jpeg) repeat-y;
+    font-size: 10px;
 }
-.covid:before{
+
+.covid:before {
     content: "";
     width: 100%;
-    height:69.8%;
+    height: 55.5%;
     background-color: #ffffffe3;
     position: absolute;
 }
-.contenido{
+
+.contenido {
     padding: 10px;
 }
-.covid h3,a,p,ul,img{
+
+.covid h3,
+a,
+p,
+ul,
+img {
     position: relative;
 }
-.items img{
+
+.items img {
     width: 15px;
     height: auto;
 }
-.flecha-items{
-    width:10px;
+
+.flecha-items {
+    width: 10px;
     height: 10px;
     display: flex;
     justify-content: center;
@@ -194,38 +243,46 @@ footer p{
     margin-right: 1rem;
     margin-left: 0rem;
 }
-.items{
+
+.items {
     display: flex;
     align-content: flex-start;
     padding-left: 0rem;
     padding-top: 2rem;
     margin-left: 0rem;
 }
-.items h3{
+
+.items h3 {
     margin-top: -0.2rem;
     font-size: 12px;
-    color:var(--blue-color);
+    color: var(--blue-color);
 }
-.oms{
+
+.oms {
     display: flex;
     justify-content: center;
 }
-.oms-img{
+
+.oms-img {
     width: 80px;
     height: auto;
 }
-.oms a{
+
+.oms a {
     font-size: 10px;
 }
+
 .lista {
     padding-left: 0rem;
 }
+
 .lista li {
     list-style: none;
     position: relative;
     padding-left: 20px;
     margin: 0.4rem;
 }
+
 .lista li:before {
     content: '';
     width: 15px;
@@ -238,37 +295,46 @@ footer p{
     top: 50%;
     transform: translateY(-50%);
 }
-.tabla{
+
+.tabla {
     width: 100%;
-    border-style:groove;
-    border-collapse:collapse;
+    border-style: groove;
+    border-collapse: collapse;
     font-size: 8px;
 }
-.tabla tr{
+
+.tabla tr {
     border-top: 0.5rem solid var(--gray-color);
 }
+
 .tabla td {
     height: 2rem;
-    color:#ffffff;
+    color: #ffffff;
     text-align: left;
     background-color: var(--blue-color);
 }
-.arriba{    
+
+.arriba {
     border-top: 0px solid var(--gray-color);
 }
 
 /*login*/
-
-.fondo{
+.fondo {
     background: url(../utils/img/10.png);
     width: 100%;
 }
-.btn{
-    position: absolute;
-    top: 50px;
-    left: 220px;
+
+#login {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
-.boton-inicio{
+
+.boton-inicio {
+    position: relative;
+    left: 6rem;
     color: white;
     background-color: var(--blue-color);
     border-radius: 6px;
@@ -281,60 +347,62 @@ footer p{
     cursor: pointer;
     text-decoration: none;
 }
-#login{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-}
-.form-login img{
+
+.form-login img {
     width: 250px;
 }
-.form-login{
+
+.form-login {
     width: 90%;
     height: 400px;
     box-shadow: 3px 3px 10px var(--gray-color);
     background-color: #ffffff;
     border-radius: 15px;
     display: flex;
-    flex-direction: column ;
+    flex-direction: column;
     align-items: center;
     margin: 20px;
     animation: scale 1s 1s;
 }
-@keyframes scale{
-    0%{
+
+@keyframes scale {
+    0% {
         transform: scale(0);
     }
 }
-.form-group{
+
+.form-group {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-top: 0.9rem;
 }
-.from-label{
+
+.from-label {
     font-family: 'Poppins', sans-serif;
 }
-.form-input{
+
+.form-input {
     border-radius: 12px;
     border: 1px solid #aee4e7;
     padding: 0.5rem;
     outline: none;
     background-color: #e8f7f8;
-    width: 250px; 
+    width: 250px;
     height: 32px;
     font-family: 'Poppins', sans-serif;
     margin-top: 8px;
 }
-.form-input:focus{
-    border:3px solid var(--blue-color) ;
+
+.form-input:focus {
+    border: 3px solid var(--blue-color);
 }
-.form-input::placeholder{
+
+.form-input::placeholder {
     font-size: 0.8rem;
 }
-.btn-naranja{
+
+.btn-naranja {
     color: white;
     background-color: var(--orange-color);
     border-radius: 6px;
@@ -346,26 +414,31 @@ footer p{
     margin: 10px 0;
     cursor: pointer;
 }
-.btn-naranja a{
+
+.btn-naranja a {
     text-decoration: none;
     color: white;
 }
-.form-olvido{
+
+.form-olvido {
     text-align: center;
     color: var(--blue-color);
     font-size: 0.8rem;
 }
-#login p{
+
+#login p {
     text-align: center;
     font-weight: bold;
     font-size: 0.8rem;
 }
-.form-group label{
+
+.form-group label {
     font-family: 'Poppins', sans-serif;
     text-align: center;
     font-weight: bold;
 }
-.encabezado-login{
+
+.encabezado-login {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -378,24 +451,26 @@ footer p{
 }
 
 /*dashboard*/
-
-#cajita-principal{
+#cajita-principal {
     display: flex;
     flex-direction: column;
     width: 100%;
 }
-.botones-menu{
+
+.botones-menu {
     width: 100%;
-    background-color:var(--blue-color);
+    background-color: var(--blue-color);
     height: 60vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
-.botones-menu a{
+
+.botones-menu a {
     text-decoration: none;
 }
-.botones-menu button{
+
+.botones-menu button {
     font-family: 'Poppins', sans-serif;
     background-color: var(--gray-color);
     width: 100%;
@@ -408,50 +483,60 @@ footer p{
     padding-bottom: 40px;
     cursor: pointer;
 }
-.botones-menu img{
+
+.botones-menu img {
     width: 250px;
     margin-left: 50px;
 }
-.option1{
-animation: menu 1.5s ease-in 1s 1;
+
+.option1 {
+    animation: menu 1.5s ease-in 1s 1;
 }
-.option2{
+
+.option2 {
     animation: menu 1.5s ease-in 3s 1;
 }
-.option3{
+
+.option3 {
     animation: menu 1.5s ease-in 5s 1;
 }
-@keyframes menu{
-    20%{
+
+@keyframes menu {
+    20% {
         transform: translateY(-10px);
     }
 }
-.btn-icono{
+
+.btn-icono {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.caja-blanca{
+
+.caja-blanca {
     display: flex;
     flex-direction: column;
     width: 100%;
 }
-.footer{
+
+.footer {
     width: 0px;
     height: 0px;
 }
-.footer img{
+
+.footer img {
     position: absolute;
-    right: -0px;
     bottom: -24rem;
-    max-width: 150%;
+    max-width: 100%;
 }
-.usuario{
+
+.usuario {
     display: flex;
     justify-content: flex-end;
 }
-.usuario i{
-    width:30px;
+
+.usuario i {
+    width: 30px;
     height: 30px;
     display: flex;
     justify-content: center;
@@ -462,11 +547,12 @@ animation: menu 1.5s ease-in 1s 1;
     border: 2px solid var(--orange-color);
     margin-right: 5px;
 }
-.usuario button{
+
+.usuario button {
     display: flex;
     align-items: center;
     font-family: 'Poppins', sans-serif;
-    background: linear-gradient(60deg, #a59f9f, rgb(207, 202, 202) 50%, #b8b2b2, rgb(207, 200, 200), #c7c0c0, rgb(216, 209, 209),#c7bdbd);  
+    background: linear-gradient(60deg, #a59f9f, rgb(207, 202, 202) 50%, #b8b2b2, rgb(207, 200, 200), #c7c0c0, rgb(216, 209, 209), #c7bdbd);
     height: 40px;
     width: 175px;
     border-radius: 10%;
@@ -475,24 +561,28 @@ animation: menu 1.5s ease-in 1s 1;
     margin-right: 10px;
     cursor: pointer;
 }
-.centro{
-    display:flex;
+
+.centro {
+    display: flex;
     flex-direction: column;
     align-items: center;
     align-content: center;
     margin-top: 20px;
     padding: 10px;
 }
-.centro h1{
+
+.centro h1 {
     font-size: 30px;
 }
-.busqueda{
+
+.busqueda {
     display: flex;
     flex-direction: row;
     align-items: center;
     margin-top: 70px;
 }
-.busqueda input{
+
+.busqueda input {
     border: 0;
     border-bottom: 2px solid var(--blue-color);
     font-family: 'Poppins', sans-serif;
@@ -501,15 +591,17 @@ animation: menu 1.5s ease-in 1s 1;
     font-size: 0.9rem;
     margin-right: 2px;
 }
-.busqueda button{
-    background-color:var(--blue-color);
+
+.busqueda button {
+    background-color: var(--blue-color);
     border: 3px solid var(--aquablue-color);
     border-radius: 8px;
     cursor: pointer;
     margin-right: 2px;
 }
-.busqueda i{
-    width:20px;
+
+.busqueda i {
+    width: 20px;
     height: 20px;
     display: flex;
     justify-content: center;
@@ -517,100 +609,122 @@ animation: menu 1.5s ease-in 1s 1;
     color: #ffffff;
     font-size: 12px;
 }
-.guerreros{
+
+.guerreros {
     opacity: 50%;
-    float: right;
-    left: 25%;
-    margin-top: 20%;
+    position: absolute;
+    left: 7rem;
+    top: 52rem;
     transform: rotate(10deg);
     width: 250px;
     height: auto;
 }
 
 /*pacientes*/
-.container{
+.container {
     width: 100%;
     margin: auto;
 }
-.table{
+
+.table {
     width: 95%;
     border-collapse: collapse;
     table-layout: fixed;
-    margin:auto;
+    margin: auto;
     padding: 0;
     border: 0;
     animation: mover 2s;
 }
-@keyframes mover{
-    0%{
+
+@keyframes mover {
+    0% {
         transform: translateX(-200vh);
     }
 }
-.table caption{
+
+.table caption {
     font-size: 22px;
     color: var(--blue-color);
     font-weight: bold;
-    text-decoration:underline;
+    text-decoration: underline;
     margin: 8px 0;
 }
-.table thead{
+
+.table thead {
     display: none;
 }
-.table tr, .table th, .table td{
-    border:2px solid var(--aquablue-color);
+
+.table tr,
+.table th,
+.table td {
+    border: 2px solid var(--aquablue-color);
 }
-.table th, .table td{
+
+.table th,
+.table td {
     padding: 8px;
     text-align: center;
     font-size: 12px;
 }
-.table th{
+
+.table th {
     background: var(--blue-color);
-    color:#ffffff;
+    color: #ffffff;
 }
-.table tr{
+
+.table tr {
     background-color: var(--gray-color);
     margin-bottom: 8px;
     display: block;
 }
-.table td{
+
+.table td {
     display: block;
     text-align: right;
 
 }
-.table tbody tr:hover{
+
+.table tbody tr:hover {
     background-color: rgba(240, 229, 229, 0.2);
 }
-.table tbody td:hover{
+
+.table tbody td:hover {
     background-color: rgba(0, 0, 0, 0.692);
 }
-.table td::before{
+
+.table td::before {
     content: attr(data-label);
     font-weight: bold;
     float: left;
 }
-.hpacientes{
+
+.hpacientes {
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: #000000;
-    height:110px;
-    padding:0.9%;
+    height: 110px;
+    padding: 0.9%;
 }
-.border{
+
+.border {
     border-bottom: 4px solid var(--aquablue-color);
 }
-.hpacientes img{
+
+.hpacientes img {
     width: 200px;
 }
-.btn-0001{
+
+.btn-0001 {
     display: flex;
 }
-.btn-0001 a{
+
+.btn-0001 a {
     text-decoration: none;
 }
-.btn-001{
-    width:50px;
+
+.btn-001 {
+    width: 50px;
     height: 50px;
     display: flex;
     justify-content: center;
@@ -622,32 +736,39 @@ animation: menu 1.5s ease-in 1s 1;
     margin-right: 5px;
     cursor: pointer;
 }
-.btn-001 a{
+
+.btn-001 a {
     text-decoration: none;
 }
-.botones{
+
+.botones {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: flex-end;
 }
-.btn-rojo{
+.botones a{
+    text-decoration: none;
+}
+
+.btn-rojo {
     color: white;
-    background-color:var(--red-color);
+    background-color: var(--red-color);
     border-radius: 5px;
     border: 0;
     padding: 5px 10px 5px 10px;
     font-family: 'Poppins', sans-serif;
     font-size: 0.8rem;
     font-weight: bold;
-    display:flex;
+    display: flex;
     flex-direction: row;
     align-items: center;
     margin-left: 10px;
     cursor: pointer;
 }
-.btn-aclaro{
-    background-color:var(--aquablue-color);
+
+.btn-aclaro {
+    background-color: var(--aquablue-color);
     border-radius: 5px;
     border: 0;
     padding: 5px 10px 5px 10px;
@@ -656,8 +777,9 @@ animation: menu 1.5s ease-in 1s 1;
     font-weight: bold;
     cursor: pointer;
 }
-.btn-rojo i{
-    width:10px;
+
+.btn-rojo i {
+    width: 10px;
     height: 10px;
     display: flex;
     justify-content: center;
@@ -670,130 +792,151 @@ animation: menu 1.5s ease-in 1s 1;
     font-weight: bold;
     margin-left: 3px;
 }
-.bscr{
+
+.bscr {
     display: flex;
     justify-content: center;
     margin: 30px 0;
 }
-.buscar{
-    background-color:var(--blue-color);
+
+.buscar {
+    background-color: var(--blue-color);
     border: 3px solid var(--aquablue-color);
     border-radius: 6px;
-    cursor: pointer; 
-
+    cursor: pointer;
 }
-.buscar i{
+
+.buscar i {
     color: #ffffff;
     font-size: 15px;
     padding: 5px;
 }
-.titulo{
+
+.titulo {
     text-align: center;
 }
-.titulo h1{
-    color:var(--blue-color);
+
+.titulo h1 {
+    color: var(--blue-color);
     text-decoration: underline var(--blue-color) 1px
 }
-.agregar button{
-color: white;
-background-color: var(--orange-color);
-border-radius: 6px;
-border: 0;
-padding: 10.5px;
-font-family: 'Poppins', sans-serif;
-font-size: 0.6rem;
-font-weight: bold;
-cursor: pointer;
-display: flex;
-flex-direction: row;
-margin-top: 1px;
+
+.agregar button {
+    color: white;
+    background-color: var(--orange-color);
+    border-radius: 6px;
+    border: 0;
+    padding: 10.5px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.6rem;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    margin-top: 1px;
 }
-.agregar button i{
+
+.agregar button i {
     margin-left: 5px;
 }
-.agregar a{
+
+.agregar a {
     text-decoration: none;
 }
-.input-buscar{
+
+.input-buscar {
     font-family: 'Poppins', sans-serif;
     border-radius: 8px;
     border: 2px solid var(--aquablue-color);
     outline: none;
     background-color: #ffffff;
-    width: 170px; 
+    width: 170px;
     height: 32px;
     margin-left: 5px;
 }
-.input-buscar:focus{
-    border:3px solid var(--blue-color) ;
+
+.input-buscar:focus {
+    border: 3px solid var(--blue-color);
 }
-.input-buscar::placeholder{
+
+.input-buscar::placeholder {
     font-size: 0.8rem;
 }
 
 /*usuarionuevo*/
-
-.titulo2{
+.titulo2 {
     background-color: var(--blue-color);
     border-radius: 5px;
     text-align: center;
     color: #ffffff;
 }
-.titulo2 h2{
+
+.titulo2 h2 {
     font-weight: 100;
 }
-.form{
+
+.form {
     border: 1px solid var(--gray-color);
     width: 100%;
 }
-.subtitulo{
+
+.subtitulo {
     display: flex;
     background-color: var(--aquablue-color);
-    border-radius:5px;
+    border-radius: 5px;
     width: 95%;
     height: 30px;
     border: 1px solid var(--blue-color);
     margin: auto;
 }
-.subtitulo img{
+
+.subtitulo img {
     width: 30px;
     padding-left: 10px;
 }
-.subtitulo h3{
+
+.subtitulo h3 {
     margin-top: 0.4%;
-    color:  #ffffff;
+    color: #ffffff;
     align-items: center;
     font-weight: lighter;
 }
-.subinfo{
+
+.subinfo {
     padding-left: 14%;
 }
-.subinfo2{
+
+.subinfo2 {
     padding-left: 3%;
 }
-.subinfo3{
+
+.subinfo3 {
     padding-left: 17%;
 }
-#formulario label{
+
+#formulario label {
     font-family: 'Poppins', sans-serif;
     margin: auto 10px;
 }
-#formulario input{
+
+#formulario input {
     font-family: 'Poppins', sans-serif;
     border: 1px solid var(--aquablue-color);
-    color:#646464;
+    color: #646464;
     font-size: 80%;
     width: 90%;
 }
-#formulario select{
+
+#formulario select {
     font-family: 'Poppins', sans-serif;
     border: 1px solid var(--aquablue-color);
-    color:#646464;
+    color: #646464;
     font-size: 80%;
     height: 40px;
     width: 90%;
 }
-.colorgris{
+
+.colorgris {
     background-color: var(--gray-color);
     width: 95%;
     height: 1600px;
@@ -803,455 +946,646 @@ margin-top: 1px;
     display: flex;
     flex-direction: column;
 }
-.tamaño{
+
+.tamaño {
     height: 40px;
     margin: 15px 15px 10px 10px;
 }
-.form-group2{
+
+.form-group2 {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-left:15px;
+    margin-left: 15px;
     animation: form 2s;
 }
-@keyframes form{
-    0%{
+
+@keyframes form {
+    0% {
         transform: translateY(-100vh);
     }
 }
-.date{
+
+.date {
     margin: 15px 15px 10px 10px;
     height: 40px;
     width: 250px;
 }
-.grupo3{
+
+.grupo3 {
     width: 400px;
     margin: 15px 15px 10px 10px;
 }
-.distancia{
+
+.distancia {
     display: flex;
     margin: 20px;
 }
-.guardar{
+
+.guardar {
     display: flex;
     justify-content: center;
     margin-top: -20px;
 }
 
-/*Resolución tabletas*/
+/*Vacunación*/
+.h2 {
+    margin-left: 10px;
+}
 
+.btnVacuna p {
+    margin-left: 10px;
+}
+
+.botonesVacuna {
+    display: flex;
+    justify-content: space-around;
+}
+
+.botonesVacuna button {
+    font-weight: normal;
+    font-size: 14px;
+}
+
+.cerrar {
+    width: 150px;
+    display: flex;
+    justify-content: center;
+}
+
+.caja-datos {
+    border: 2px solid #7a7a7a;
+    border-radius: 20px;
+    background-color: var(--gray-color);
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    margin: 10px;
+}
+
+.datos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.caja-datos input,
+.caja-datos select,
+.caja-datos textarea {
+    width: 90%;
+    color: #8a8787;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    margin: 10px 0 0 0;
+    border: 1px solid var(--aquablue-color);
+    padding: 5px 0 5px 5px;
+}
+
+.caja-datos textarea::placeholder {
+    text-align: center;
+    padding: 15px 0;
+}
+
+.titulo-form {
+    background-color: var(--aquablue-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    margin: 5px;
+
+}
+
+.titulo-form i,
+.titulo-form h3 {
+    color: white;
+}
+
+.titulo-form i {
+    margin-bottom: 5px;
+    padding-right: 10px;
+}
+
+.titulo-form h3 {
+    font-weight: normal;
+    font-size: 16px;
+}
+
+/*Resolución tabletas*/
 @media screen and (min-width:768px) {
-    .encabezado{
+    .encabezado {
         display: flex;
-        flex-direction: row; 
+        flex-direction: row;
         justify-content: end;
         padding: 0 10px;
     }
-    .contacto{
+
+    .contacto {
         padding-right: 100px;
     }
-    .logo{
-        width: 190px; 
+
+    .logo {
+        width: 190px;
         margin-left: 10px;
         margin-bottom: -20px;
     }
-    .linea{
+
+    .linea {
         width: 60%;
         margin-bottom: -10px;
     }
-    .medico1{
-        height:220px;
+
+    .medico1 {
+        height: 220px;
         margin-top: 20px;
     }
-    .text{
-        align-items:flex-start;
+
+    .text {
+        align-items: flex-start;
         justify-content: center;
         padding: 60px;
     }
-    .text h1{
+
+    .text h1 {
         margin: 5px 0 0 80px;
         font-size: 16px;
     }
-    .text h2{
+
+    .text h2 {
         font-size: 16px;
         margin: 5px 0 0 160px;
     }
-    .text button{
+
+    .text button {
         font-size: 12px;
         margin: 5px 0 0 140px;
     }
-    .covid{
+
+    .covid {
         flex-direction: row;
-        background:url(../utils/img/4.\ covid.jpeg) repeat-x;
-        font-size: 14px;   
+        background: url(../utils/img/4.\ covid.jpeg) repeat-x;
+        font-size: 14px;
     }
-    .covid:before{
-        height:56.5%;
+
+    .covid:before {
+        height: 45%;
     }
-    .contenido{
+
+    .contenido {
         padding: 10px 30px;
     }
-    .items h3{
+
+    .items h3 {
         font-size: 16px;
     }
-    .oms-img{
+
+    .oms-img {
         width: 100px;
     }
-    .oms a{
+
+    .oms a {
         font-size: 12px;
     }
+
     .lista {
         width: 400px;
     }
-    .tabla{
+
+    .tabla {
         font-size: 12px;
     }
+
     .tabla td {
         height: 2.2rem;
     }
-    footer{
+
+    footer {
         height: 35px;
     }
-    footer p{
+
+    footer p {
         font-size: 12px;
     }
 
     /*login*/
-
-    .form-login{
+    .form-login {
         width: 50%;
     }
-    .btn{
-        left: 450px;
+
+    .boton-inicio {
+        left: 7rem;
     }
 
     /*dashboard*/
-    #cajita-principal{
+    #cajita-principal {
         flex-direction: row;
     }
-    .botones-menu{
+
+    .botones-menu {
         flex-basis: 20%;
         height: 100vh;
     }
-    .botones-menu img{
+
+    .botones-menu img {
         margin-left: 0px;
         margin-bottom: 20px;
     }
-    .usuario button{
-        margin-right: 2.5rem;
+
+    .usuario button {
+        margin-right: 1rem;
     }
-    .centro{
+
+    .centro {
         margin-top: 50px;
     }
-    .guerreros{
-        width: 200px;
-        left: 300px;
-        margin-top: 60px;
+
+    .guerreros {
+        width: 240px;
+        left: 32rem;
+        top: 29rem;
     }
-    .footer img{
-        position: absolute;
-        right: -12px;
+
+    .footer img {
         bottom: 0rem;
-        max-width: 531px;
+        max-width: 67%;
     }
 
     /*paciente*/
-    .table th, .table td{
+    .table th,
+    .table td {
         padding: 3px 8px;
     }
-    .bscr{
+
+    .bscr {
         display: flex;
-        justify-content:space-between;
+        justify-content: space-between;
         margin: 30px 30px;
     }
 
     /*usuarionuevo*/
-
-    .subinfo{
+    .subinfo {
         padding-left: 32%;
     }
-    .subinfo2{
+
+    .subinfo2 {
         padding-left: 26%;
     }
-    .subinfo3{
+
+    .subinfo3 {
         padding-left: 34%;
     }
-    .form-group2{
-        margin-left:45px ;
+
+    .form-group2 {
+        margin-left: 45px;
     }
-    .siyno{
+
+    .siyno {
         margin: auto;
+    }
+
+    /*vacunación*/
+
+    .btnVacuna {
+        display: flex;
+        justify-content: space-between;
+        margin: 0 10px;
+    }
+
+    .botonesVacuna button {
+        margin: 5px;
     }
 }
 
 /*Resoluciones medias*/
-
 @media screen and (min-width:1024px) {
-    .encabezado{
+    .encabezado {
         display: flex;
-        flex-direction: row; 
+        flex-direction: row;
         justify-content: end;
     }
-    .encabezado button{
+
+    .encabezado button {
         font-size: 14px;
         margin-bottom: 20px;
     }
-    .icono-contacto{
-        width:20px;
+
+    .icono-contacto {
+        width: 20px;
         height: 20px;
         font-size: 10px;
     }
-    .box-info{
+
+    .box-info {
         padding-left: 2rem;
     }
-    .box-info p{
+
+    .box-info p {
         font-size: 14px;
     }
-    .logo{
-        width: 250px; 
+
+    .logo {
+        width: 250px;
         margin-left: 20px;
         margin-bottom: -30px;
     }
-    .linea{
+
+    .linea {
         width: 60%;
         margin-bottom: -20px;
     }
-    .icono-logo{
+
+    .icono-logo {
         font-size: 40px;
     }
-    .medico1{
-        height:280px;
+
+    .medico1 {
+        height: 280px;
     }
-    .text{
-        align-items:flex-start;
+
+    .text {
+        align-items: flex-start;
         justify-content: center;
         padding: 70px;
     }
-    .text h1{
+
+    .text h1 {
         margin: 10px 0 0 80px;
         font-size: 24px;
     }
-    .text h2{
+
+    .text h2 {
         font-size: 24px;
         margin: 10px 0 0 200px;
     }
-    .text button{
+
+    .text button {
         font-size: 18px;
         margin: 10px 0 0 170px;
     }
-    .covid{
-        font-size: 20px;   
+
+    .covid {
+        font-size: 20px;
     }
-    .covid:before{
-        height:54%;
+
+    .covid:before {
+        height: 57%;
     }
-    .contenido{
+
+    .contenido {
         padding: 10px 30px;
     }
-    .items img{
+
+    .items img {
         width: 25px;
     }
-    .items h3{
+
+    .items h3 {
         margin-top: -0.5rem;
         font-size: 24px;
     }
-    .oms-img{
+
+    .oms-img {
         width: 140px;
     }
-    .oms a{
+
+    .oms a {
         font-size: 16px;
     }
+
     .lista {
         width: 500px;
     }
-    .tabla{
+
+    .tabla {
         font-size: 16px;
     }
+
     .tabla td {
         height: 3.2rem;
     }
-    footer{
-        height: 45px;   
+
+    footer {
+        height: 45px;
     }
-    footer p{
+
+    footer p {
         font-size: 16px;
         padding-top: 14px;
     }
 
     /*login*/
-
-    .form-login{
+    .form-login {
         width: 40%;
         height: 440px;
     }
-    .btn{
-        top: 120px;
-        left: 590px;
+
+    .boton-inicio {
+        left: 8rem;
     }
 
     /*dashboard*/
-
-    .usuario button{
-        margin-right: 3.5rem;
-    }
-    .guerreros{
-        left: 450px;
-        margin-top: 150px;
+    .guerreros {
+        left: 43rem;
+        top: 25rem;
         width: 300px;
     }
-    .footer img{
-        position: absolute;
+
+    .footer img {
         right: 4px;
         max-width: 770px;
     }
-    
+
     /*pacientes*/
-    .table{
-        border:2px solid var(--aquablue-color);
-        width: 100%;
+    .table {
+        border: 2px solid var(--aquablue-color);
     }
-    .table caption{
+
+    .table caption {
         font-size: 28px;
     }
-    .table thead{
-        display:table-header-group;
+
+    .table thead {
+        display: table-header-group;
     }
-    .table th, .table td{
+
+    .table th,
+    .table td {
         font-size: 16px;
     }
-    .table tr{
-        margin-bottom: 0px;
-        display:table-row;
-    }
-    .table td{
-        display:table-cell;
-        text-align: center;
 
+    .table tr {
+        margin-bottom: 0px;
+        display: table-row;
     }
-    .table td::before{
-        content:none;
-        font-weight:0;
+
+    .table td {
+        display: table-cell;
+        text-align: center;
+    }
+
+    .table td::before {
+        content: none;
+        font-weight: 0;
         float: 0;
     }
-    .botones{
+
+    .botones {
         display: flex;
     }
-    .btn-aclaro{
+
+    .btn-aclaro {
         display: flex;
         flex-direction: row;
     }
-    .btn-rojo{
+
+    .btn-rojo {
         margin-left: 5px;
         margin-right: -5px;
     }
-    .agregar button{
+
+    .agregar button {
         font-size: 14px;
     }
-
+    .margin{
+        margin-top: 50px;
+        margin-bottom: 106px;
+    }
     /*usuarionuevo*/
-    .form-group2{
+    .form-group2 {
         flex-direction: row;
         margin-right: 40px;
     }
-    .colorgris{
+
+    .colorgris {
         height: 1000px;
+    }
+
+    /*vacunación*/
+    .datos {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .caja-datos input,
+    .caja-datos select,
+    .caja-datos textarea {
+        width: 50%;
+        margin: 10px 10px 0 10px;
+        padding: 10px 0 10px 5px;
+    }
+
+    .caja-datos textarea::placeholder {
+        text-align: center;
+        padding: 15px 0;
     }
 }
 
 /*Resoluciones macro*/
-
 @media screen and (min-width:1200px) {
-    .encabezado{
+    .encabezado {
         display: flex;
-        flex-direction: row; 
+        flex-direction: row;
         justify-content: end;
         padding: 0 20px;
     }
-    .encabezado button{
+
+    .encabezado button {
         font-size: 18px;
     }
-    .icono-contacto{
-        width:25px;
+
+    .icono-contacto {
+        width: 25px;
         height: 25px;
         font-size: 12px;
     }
-    .box-info{
+
+    .box-info {
         padding-left: 2rem;
     }
-    .box-info p{
+
+    .box-info p {
         font-size: 16px;
     }
-    .logo{
-        width: 320px; 
+
+    .logo {
+        width: 320px;
         margin-left: 10px;
         margin-bottom: -40px;
     }
-    .linea{
+
+    .linea {
         width: 60%;
     }
-    .icono-logo{
+
+    .icono-logo {
         font-size: 50px;
     }
-    .medico1{
-        height:350px;
+
+    .medico1 {
+        height: 350px;
         margin-top: 30px;
     }
-    .text{
-        align-items:flex-start;
+
+    .text {
+        align-items: flex-start;
         justify-content: center;
         padding: 100px;
     }
-    .text h1{
+
+    .text h1 {
         font-size: 30px;
     }
-    .text h2{
+
+    .text h2 {
         font-size: 30px;
         margin: 10px 0 0 220px;
     }
-    .text button{
+
+    .text button {
         font-size: 20px;
         margin: 10px 0 0 200px;
     }
-    .covid:before{
-        height:49.2%;
+
+    .covid:before {
+        height: 61%;
     }
-    .contenido{
+
+    .contenido {
         padding: 40px 40px 10px 40px;
     }
-    .oms-img{
+
+    .oms-img {
         width: 160px;
     }
-    .oms a{
+
+    .oms a {
         font-size: 18px;
-    }  
-    /*login*/ 
-    .form-login{
+    }
+
+    /*login*/
+    .form-login {
         height: 500px;
     }
-    .btn{
-        top: 150px;
-        left: 710px;
+
+    .boton-inicio {
+        left: 10rem;
     }
 
     /*dashboard*/
+    .guerreros {
+        left: 50rem;
+        top: 22rem;
+        width: 350px;
+    }
 
-    .usuario button{
-        margin-right: 4.5rem;
+    .footer img {
+        max-width: 81.2%;
     }
-    .guerreros{
-        left: 520px;
-        margin-top: 170px;
-        width: 400px;
-    }
-    .footer img{
-        position: absolute;
-        right: 5px;
-        max-width: 945px;
-    }
-    
+
     /*pacientes*/
-    .btn-rojo{
+    .btn-rojo {
         margin-left: 15px;
         margin-right: 5px;
     }
+
 }
